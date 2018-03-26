@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "postgresqldb": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "animalitoapp",
+    "password": "",
+    "name": "postgresqldb",
+    "user": "animalito",
+    "connector": "postgresql"
+  }
+}

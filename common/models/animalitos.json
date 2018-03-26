@@ -1,0 +1,28 @@
+{
+  "name": "animalitos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre_animal": {
+      "type": "string",
+      "required": true
+    },
+    "especial": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "sorteos": {
+      "type": "hasMany",
+      "model": "sorteos",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

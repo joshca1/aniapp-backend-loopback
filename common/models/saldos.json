@@ -1,0 +1,30 @@
+{
+  "name": "saldos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "tipo_saldo": {
+      "type": "string",
+      "required": true
+    },
+    "fecha_mov": {
+      "type": "date",
+      "required": true
+    },
+    "monto": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

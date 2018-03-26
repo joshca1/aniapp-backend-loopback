@@ -1,0 +1,34 @@
+{
+  "name": "retira_saldo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fecha_retiro": {
+      "type": "date",
+      "required": true
+    },
+    "monto_retiro": {
+      "type": "number",
+      "required": true
+    },
+    "conciliado": {
+      "type": "boolean",
+      "required": true
+    },
+    "nro_referencia": {
+      "type": "string",
+      "required": true
+    },
+    "fecha_transferido": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

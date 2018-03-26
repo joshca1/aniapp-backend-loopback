@@ -1,0 +1,78 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "animalitos": {
+    "dataSource": "postgresqldb",
+    "public": true
+  },
+  "agencia": {
+    "dataSource": "postgresqldb",
+    "public": true
+  },
+  "sorteos": {
+    "dataSource": "postgresqldb",
+    "public": true
+  },
+  "saldos": {
+    "dataSource": "postgresqldb",
+    "public": true
+  },
+  "bancos": {
+    "dataSource": "postgresqldb",
+    "public": true
+  },
+  "cuenta_bancos": {
+    "dataSource": "postgresqldb",
+    "public": true
+  },
+  "apuestas": {
+    "dataSource": "postgresqldb",
+    "public": true
+  },
+  "recargas": {
+    "dataSource": "postgresqldb",
+    "public": true
+  },
+  "cta_banco_usuario": {
+    "dataSource": "postgresqldb",
+    "public": true
+  },
+  "retira_saldo": {
+    "dataSource": "postgresqldb",
+    "public": true
+  }
+}

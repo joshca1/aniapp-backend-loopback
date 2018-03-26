@@ -1,0 +1,34 @@
+{
+  "name": "recargas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fecha_recarga": {
+      "type": "date",
+      "required": true
+    },
+    "banco_envia": {
+      "type": "string",
+      "required": true
+    },
+    "nro_referencia": {
+      "type": "string",
+      "required": true
+    },
+    "monto_recarga": {
+      "type": "number",
+      "required": true
+    },
+    "conciliado": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

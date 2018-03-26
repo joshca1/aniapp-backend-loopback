@@ -1,0 +1,33 @@
+{
+  "name": "sorteos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fecha_sorteo": {
+      "type": "date",
+      "required": true
+    },
+    "status_sorteo": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "agencia": {
+      "type": "belongsTo",
+      "model": "agencia",
+      "foreignKey": ""
+    },
+    "animalitos": {
+      "type": "belongsTo",
+      "model": "animalitos",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
