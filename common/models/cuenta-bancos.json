@@ -12,7 +12,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "bancos": {
+      "type": "belongsTo",
+      "model": "bancos",
+      "foreignKey": "id"
+    },
+    "recargas": {
+      "type": "hasMany",
+      "model": "recargas",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

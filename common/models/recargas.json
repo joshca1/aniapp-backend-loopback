@@ -28,7 +28,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "bancos": {
+      "type": "belongsTo",
+      "model": "bancos",
+      "foreignKey": ""
+    },
+    "cuentaBancos": {
+      "type": "belongsTo",
+      "model": "cuenta_bancos",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

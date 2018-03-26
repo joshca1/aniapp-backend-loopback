@@ -12,7 +12,23 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "bancos": {
+      "type": "belongsTo",
+      "model": "bancos",
+      "foreignKey": ""
+    },
+    "usuarios": {
+      "type": "belongsTo",
+      "model": "usuarios",
+      "foreignKey": ""
+    },
+    "retiraSaldos": {
+      "type": "hasMany",
+      "model": "retira_saldo",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

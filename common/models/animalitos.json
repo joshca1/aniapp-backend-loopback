@@ -21,6 +21,11 @@
       "type": "hasMany",
       "model": "sorteos",
       "foreignKey": ""
+    },
+    "apuestas": {
+      "type": "hasMany",
+      "model": "apuestas",
+      "foreignKey": ""
     }
   },
   "acls": [],

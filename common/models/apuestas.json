@@ -12,7 +12,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "sorteos": {
+      "type": "belongsTo",
+      "model": "sorteos",
+      "foreignKey": ""
+    },
+    "animalitos": {
+      "type": "belongsTo",
+      "model": "animalitos",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -26,6 +26,11 @@
       "type": "belongsTo",
       "model": "animalitos",
       "foreignKey": ""
+    },
+    "apuestas": {
+      "type": "hasMany",
+      "model": "apuestas",
+      "foreignKey": "id"
     }
   },
   "acls": [],

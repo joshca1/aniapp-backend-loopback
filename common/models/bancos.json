@@ -12,7 +12,23 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "cuentaBancos": {
+      "type": "hasMany",
+      "model": "cuenta_bancos",
+      "foreignKey": "id"
+    },
+    "recargas": {
+      "type": "hasMany",
+      "model": "recargas",
+      "foreignKey": ""
+    },
+    "ctaBancoUsuarios": {
+      "type": "hasMany",
+      "model": "cta_banco_usuario",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

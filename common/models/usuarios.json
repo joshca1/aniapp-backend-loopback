@@ -1,42 +1,48 @@
 {
-  "name": "retira_saldo",
+  "name": "usuarios",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "fecha_retiro": {
-      "type": "date",
-      "required": true
-    },
-    "monto_retiro": {
-      "type": "number",
-      "required": true
-    },
-    "conciliado": {
-      "type": "boolean",
-      "required": true
-    },
-    "nro_referencia": {
+    "nombre": {
       "type": "string",
       "required": true
     },
-    "fecha_transferido": {
-      "type": "date",
+    "apellido": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
       "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "type": "string",
+      "required": true
+    },
+    "cedula": {
+      "type": "number",
+      "required": true
+    },
+    "referido": {
+      "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "ctaBancoUsuario": {
-      "type": "belongsTo",
+    "ctaBancoUsuarios": {
+      "type": "hasMany",
       "model": "cta_banco_usuario",
       "foreignKey": ""
     },
-    "usuarios": {
-      "type": "belongsTo",
-      "model": "usuarios",
+    "retiraSaldos": {
+      "type": "hasMany",
+      "model": "retira_saldo",
       "foreignKey": ""
     }
   },

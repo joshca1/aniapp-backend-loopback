@@ -74,5 +74,9 @@
   "retira_saldo": {
     "dataSource": "postgresqldb",
     "public": true
+  },
+  "usuarios": {
+    "dataSource": "postgresqldb",
+    "public": true
   }
 }
