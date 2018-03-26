@@ -56,4 +56,8 @@ dataSource.automigrate('retira_saldo',function(err) {
         dataSource.disconnect();
 });
 
+dataSource.automigrate('usuarios',function(err) {
+        if(err) throw err;
+        dataSource.disconnect();
+});
 

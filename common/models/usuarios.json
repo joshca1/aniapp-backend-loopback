@@ -15,7 +15,8 @@
     },
     "email": {
       "type": "string",
-      "required": true
+      "required": true,
+      "id": true
     },
     "password": {
       "type": "string",
@@ -27,7 +28,8 @@
     },
     "cedula": {
       "type": "number",
-      "required": true
+      "required": true,
+      "id": true
     },
     "referido": {
       "type": "string"
